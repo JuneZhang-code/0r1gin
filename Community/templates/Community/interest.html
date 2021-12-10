@@ -1,0 +1,46 @@
+{% extends "Newsletter/base.html" %}
+
+{% block content %}
+<br>
+<br>
+
+<div class="row justify-content-center mt-5">
+        <div class="col-md-7 text-center">
+                  <h4 class="card-title">What are you interested in?</h4>
+                  <div class="row justify-content-center mt-5">
+                    <select class="form-select w-50 p-3" aria-label=".form-select-lg example">
+                      <option value="" disabled selected>Business</option>
+                      <option value="1">angel investing</option>
+                      <option value="2">fintech</option>
+                      <option value="3">e-commerce</option>
+                      <option value="4">investment banking</option>
+                    </select>
+                  </div>
+                  <div class="row justify-content-center mt-5">
+                    <select class="form-select w-50 p-3" aria-label=".form-select-lg example">
+                      <option value="" disabled selected>Sci/Tech</option>
+                      <option value="1">ai</option>
+                      <option value="2">product design</option>
+                      <option value="3">data science</option>
+                      <option value="4">virtual design</option>
+                    </select>
+                  </div>
+                  <div class="row justify-content-center mt-5 ">
+                    <select class="form-select w-50 p-3" aria-label=".form-select-lg example">
+                      <option value="" disabled selected>Social</option>
+                      <option value="1">social impact</option>
+                      <option value="2">gaming</option>
+                      <option value="3">wellness</option>
+                      <option value="4">parenting</option>
+                    </select>
+                  </div>
+                  <div class="row justify-content-center mt-5 ">
+                   <button type="submit" class="btn  mr-5 btn-dark">Submit</button>
+                  </div>
+
+
+ </div>
+</div>
+
+
+{% endblock %}

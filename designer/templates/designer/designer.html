@@ -1,0 +1,37 @@
+{% extends "Newsletter/base.html" %}
+{% load static %}
+
+{% block content %}
+<br>
+
+
+<div class="container">
+   <div class="row justify-content-center">
+
+
+          {% for designerimage in designerimages %}
+               <img src="{{ designerimage.image.url}}"  width="1000" height="500">
+          {% endfor %}
+
+    </div>
+</div>
+<div class="row justify-content-center mt-5">
+        <div class="col-md-7 text-center">
+          <a href="{% url 'createaccount' %}" class="btn btn-dark btn-lg ">Get on board</a>
+     </div>
+</div>
+<div class="row justify-content-center mt-5">
+        <div class="col-md-7 text-center">
+
+                  <p class="text justify"> With a designer/artist account, you can create your own collection after your design is picked.
+We evaluate design/art based on the following criteria:<br>
+1. Align with our brand’s value/taste<br>
+2. Pass our design principle of convertible, customizable
+</p>
+
+  </div>
+</div>
+
+
+
+{% endblock %}

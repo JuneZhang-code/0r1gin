@@ -1,0 +1,84 @@
+{% extends "Newsletter/base.html" %}
+{% load static %}
+
+{% block content %}
+<br>
+
+
+<div class="container">
+   <div class="row justify-content-center">
+
+
+          {% for homeimage in homeimages %}
+               <img src="{{ homeimage.image.url}}" class="img-fluid">
+          {% endfor %}
+
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+    Order to upcycle your pre-owned clothes
+      <br> Custom made with elevated design
+    </div>
+
+      <a href="{% url 'shop' %}" class="btn btn-dark ">Order now</a>
+
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        <div class="container">
+          <!-- Example row of columns -->
+          <div class="row">
+            <div class="col-md-3">
+              <h5>About Us</h5>
+              <p>Click to learn more
+about what we do
+and the team behind</p>
+              <p><a href="{% url 'aboutus' %}" class="text-secondary stretched-link">Redirect &raquo;</a></p>
+            </div>
+            <div class="col-md-3">
+              <h5>For seed users</h5>
+              <p>We want to make product
+decision based on your
+insights and ideas</p>
+              <p><a href="{% url 'allproject' %}" class="text-secondary stretched-link">Propose &raquo;</a></p>
+            </div>
+            <div class="col-md-3">
+              <h5>For Designers and Ambassadors</h5>
+              <p><a href="{% url 'designerhome' %}" class="text-secondary stretched-link">Let's connect &raquo;</a></p>
+            </div>
+            <div class="col-md-3">
+              <h5>For talents</h5>
+              <p>Offer your professional
+experience to a better
+tomorrow</p>
+              <p><a href="{% url 'mentor' %}" class="text-secondary stretched-link">Let's connect &raquo;</a></p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+{% endblock %}

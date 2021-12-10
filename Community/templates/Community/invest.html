@@ -1,0 +1,19 @@
+{% extends "Newsletter/base.html" %}
+{% load static %}
+{% block content %}
+
+<br>
+    <br>
+    <br>
+  
+<div class="row justify-content-center my-3">
+  <div class="col-10">
+    <img src="{% static 'Community/invest.jpg' %}" class="img-fluid">
+
+
+  </div>
+</div>
+<div class="row justify-content-center my-3">
+  <a href="{% url 'started' %}" class="btn m-5 btn-dark btn-lg">Get Started</a>
+</div>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "Newsletter/base.html" %}
+
+{% block content %}
+
+<div class="row justify-content-center mt-5">
+        <div class="col-md-10 text-center">
+
+                           <h1>Projects</h1>
+
+        </div>
+    </div>
+
+    <br>
+
+
+
+                 <div class="list-group">
+                   <br>
+                  {% for project in projects %}
+                     <div class="container bg-light">
+                      <br>
+                       <div class="row justify-content-center">
+                         <div class="col-lg-5 col-sm-6 order-md-2">
+                           <div class="text-center">
+                               <h4>{{ project.name }}</h4>
+                           </div>
+                         </div>
+                         <div class=" col-md-2 order-md-1">
+                            <img  src="{{ project.logoimage.url }}" width="150" height="150" >
+                         </div>
+                         <div class="col-md-3 order-md-3">
+                           <div class="text-center">
+                              <a href="{% url 'viewproject' project.id %}" class="btn btn-outline-dark" >View</a>
+                            </div>
+                        </div>
+                      <br>
+                      <br>
+                      <br>
+                    </div>
+                    <br>
+                  </div>
+<br>
+<br>
+                  {% endfor %}
+                  <br>
+              </div>
+
+
+
+
+
+
+
+
+{% endblock %}
